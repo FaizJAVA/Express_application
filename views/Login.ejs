@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./Partial/bootstrap_links.ejs'); %>
+  
+</head>
+<body>
+  <%- include('./Partial/navbar_menu.ejs'); %>
+
+  <form action="/login" method="post">
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="email" name="email" id="email" class="form-control"/>
+      <label for="">Password</label>
+      <input type="password" name="password" id="password" class="form-control"/>
+      <button class="btn bg-primary">LOG IN</button>
+    </div>
+  </form>
+
+</body>
+</html>

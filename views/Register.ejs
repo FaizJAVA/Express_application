@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./Partial/bootstrap_links.ejs'); %>
+  
+</head>
+<body>
+  <%- include('./Partial/navbar_menu.ejs'); %>
+
+  <form action="/register" method="post">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input type="text" name="name" id="name" class="form-control"/>
+      <label for="">Email</label>
+      <input type="email" name="email" id="email" class="form-control"/>
+      <label for="">Password</label>
+      <input type="password" name="password" id="password" class="form-control"/>
+      <button class="btn bg-success">REGISTER</button>
+    </div>
+  </form>
+
+</body>
+</html>
